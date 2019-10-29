@@ -31,7 +31,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(2000, 2000);
+  createCanvas(2500, 2500);
   imageMode(CENTER);
 }
 
@@ -48,10 +48,11 @@ function mouseReleased() {
   lipChoice = int(random(4));
   eyeChoice = int(random(5));
   bodyChoice = int(random(5));
+  print(bodyChoice);
   show = 1;
 }
 
-function creature( body, eye, lip){
+function creature( lip, eye, body){
   
     if (body == 0) {
     image(p1, 1000, 1000);
@@ -68,7 +69,7 @@ function creature( body, eye, lip){
   if (body == 3) {
     image(p4, 1000, 1000);
   }
- 
+
   if (body == 4) {
     image(p5, 1000, 1000);    
   }  
